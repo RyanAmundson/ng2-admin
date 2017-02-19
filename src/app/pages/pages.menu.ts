@@ -3,6 +3,60 @@ export const PAGES_MENU = [
     path: 'pages',
     children: [
       {
+      path: 'home',
+        data: {
+          menu: {
+            title: 'Home',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
+        path: 'data',
+        data: {
+          menu: {
+            title: 'Data',
+            icon: 'ion-grid',
+            selected: false,
+            expanded: false,
+            order: 500,
+          }
+        },
+        children: [
+          {
+            path: 'basictables',
+            data: {
+              menu: {
+                title: 'Basic Tables',
+              }
+            }
+          },
+          {
+            path: 'smarttables',
+            data: {
+              menu: {
+                title: 'Issues',
+              }
+            }
+          }
+        ]
+      },
+      {
+        path: '',
+        data: {
+          menu: {
+            title: 'Above this entry is mine',
+            icon: '',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
         path: 'dashboard',
         data: {
           menu: {
